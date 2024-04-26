@@ -2,59 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins", sans-sherif;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #240A34;
 }
 
-body {
-    min-height: 100vh;
-    background: #212122;
-}
-
-.wrapper {
+.explainOne {
     position: absolute;
-    top: 5%;
-
-    color: #c68e17;
-
+    top: 40%;
 }
 
-.wrapper p {
-    width: 55vw;
-    margin: 1rem 0;
-    font-weight: 300;
-    text-align: right;
-    padding-top: 50px;
-    font-size: 20px;
-    animation: slide-up 2s;
-}
-
-.wrapper button {
-    padding: 10px 25px;
-    background-color: goldenrod;
-    color: #212122;
+.intro h1 {
+    margin-top: 35px;
     position: absolute;
-    left: 850px;
-    top: 150px;
-    border: none;
-    border-radius: 25px;
-    font-size: 10px;
-    font: lighter 15px "poppins", sans-serif;
-    animation: slide-up 2s;
+    left: 42%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 40px ;
+    color: #EABE6C;
+    animation: slide-up3 4s;
 }
 
-.wrapper .content {
-    font: lighter 50px "poppins", sans-serif;
-    font-weight: 1000;
-    padding-right: 810px;
-    padding-left: 810px;
-    animation: slide-up 2s;
+.button button {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    border-radius: 12px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #EABE6C;
+    color: #FFEDD8;
+    font-family: "Lucida Console", "Courier New", monospace;
+    transition-duration: 0.4s;
+    animation: slide-up1 3s;
 }
 
-@keyframes slide-up  {
-    0%, 50% {
-        opacity: 40%;
-    }
-    50%, 100% {
-        opacity: 100%;
-    }
+.button button:hover {
+    background-color: #FFEDD8;
+    color: #EABE6C;
+}
+
+.intro p {
+    color: #EABE6C;
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    animation: slide-up2 2s;
+}
+
+@keyframes slide-up1 {
+    from {top: -100px;}
+    to {top: 99px;}
+}
+@keyframes slide-up2 {
+    from {top: -100px;}
+    to {top: 198px;}
+}
+@keyframes slide-up3 {
+    from {top: -100px;}
+    to {top: 0px;}
 }
